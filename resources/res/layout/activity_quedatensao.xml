@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableLayout android:id="@+id/tableLayout" android:layout_width="368dp" android:layout_height="800dp">
+        <LinearLayout android:orientation="horizontal" android:background="#000000" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/texto1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Eletricista Fácil" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#fff500" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CÁLCULO DE QUEDA DE TÊNSÃO" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+        <TableRow android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"> android:layout_marginTop=&quot;100dp&quot;&gt;\10
+            <TextView android:textStyle="bold" android:id="@+id/txt_tensãoq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tensão (V):" android:layout_weight="0.3"/>
+            <Spinner android:id="@+id/spintensaoq" android:layout_width="280dp" android:layout_height="30dp"/>
+        </TableRow>
+        <TableRow android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"> android:layout_marginTop=&quot;100dp&quot;&gt;\10
+            <TextView android:textStyle="bold" android:id="@+id/txt_potenciaq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Potência(W):" android:layout_weight="0.3"/>
+            <EditText android:id="@+id/edt_potenciaq" android:layout_width="50dp" android:layout_height="40dp" android:ems="10" android:layout_weight="0.52" android:inputType="numberDecimal"/>
+        </TableRow>
+        <TableRow android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"> android:layout_marginTop=&quot;100dp&quot;&gt;\10
+            <TextView android:textStyle="bold" android:id="@+id/txt_distanciaq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distancia(m):" android:layout_weight="0.3"/>
+            <EditText android:id="@+id/edt_distanciaq" android:layout_width="50dp" android:layout_height="40dp" android:ems="10" android:layout_weight="0.52" android:inputType="numberDecimal"/>
+        </TableRow>
+        <TableRow android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"> android:layout_marginTop=&quot;100dp&quot;&gt;\10
+            <TextView android:textStyle="bold" android:id="@+id/txt_perdatensão" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Queda de Tênsão(%)" android:layout_weight="0.3"/>
+            <EditText android:id="@+id/edt_perdatensao" android:layout_width="50dp" android:layout_height="40dp" android:ems="10" android:layout_weight="0.52" android:inputType="numberDecimal"/>
+        </TableRow>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/cabecalho" android:background="#000000" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:gravity="center_horizontal" android:id="@+id/btn_caldimq" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Calcular" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#fff500" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Disjuntor e Seção do condutor " android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Corrente (A):" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="left" android:id="@+id/txt_correnteq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/txt_fio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Seção(mm²):" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_fioq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/txt_disjuntor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Disjuntor (A):" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_disjuntorq" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_tdisj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <LinearLayout android:orientation="horizontal" android:background="#fff500" android:padding="0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Estes Cálculos  não leva em consideração os fatores externos do cabo. Este cálculo é realizado para condutores de cobre." android:layout_alignParentBottom="true"/>
+            </TableRow>
+        </LinearLayout>
+    </TableLayout>
+</android.support.design.widget.CoordinatorLayout>

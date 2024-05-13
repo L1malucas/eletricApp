@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textStyle="bold" android:id="@+id/txt_respper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="     Local:" android:layout_weight="0.3"/>
+    <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/cabecalho" android:background="#000000" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/texto1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Eletricista Fácil" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#fff500" android:padding="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:gravity="center_horizontal" android:id="@+id/textView3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Calculo Dimensionamento" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+        <TableRow android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"> android:layout_marginTop=&quot;100dp&quot;&gt;\10
+            <TextView android:textStyle="bold" android:id="@+id/txt_tensãodim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tensão (V):" android:layout_weight="0.3"/>
+            <Spinner android:id="@+id/spintensao" android:layout_width="280dp" android:layout_height="30dp"/>
+        </TableRow>
+        <TableRow android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"> android:layout_marginTop=&quot;100dp&quot;&gt;\10
+            <TextView android:textStyle="bold" android:id="@+id/txt_localdim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Local:" android:layout_weight="0.3"/>
+            <Spinner android:id="@+id/spinarea1" android:layout_width="280dp" android:layout_height="30dp"/>
+        </TableRow>
+        <TableRow android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"> android:layout_marginTop=&quot;100dp&quot;&gt;\10
+            <TextView android:textStyle="bold" android:id="@+id/txt_areadim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Área (m²):" android:layout_weight="0.3"/>
+            <EditText android:id="@+id/edt_areadim" android:layout_width="40dp" android:layout_height="40dp" android:ems="10" android:layout_weight="0.52" android:inputType="numberDecimal"/>
+        </TableRow>
+        <LinearLayout android:orientation="horizontal" android:background="#000000" android:padding="6dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <Button android:textStyle="bold" android:id="@+id/btn_caldim" android:text="Calcular" style="@style/Widget.Button.Small"/>
+            </TableRow>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#fff500" android:padding="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Iluminação" android:layout_alignParentBottom="true"/>
+            </TableRow>
+        </LinearLayout>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/textView4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Potencia(W):" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_iluminwatts" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="lumens(lm):" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_iluminlumes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="*Qtd Circuito:" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_iluminfio" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Disjuntor (A):" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_ilumdisj" android:layout_width="30dp" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_Tilumdisj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <LinearLayout android:orientation="horizontal" android:background="#fff500" android:padding="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tomada" android:layout_alignParentBottom="true"/>
+            </TableRow>
+        </LinearLayout>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quantidade:" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_tomada" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/textView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Potência(W):" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_wtomada" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="*Qtd Circuito:" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_fiotomad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Disjuntor (A):" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:padding="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_disjtomad" android:layout_width="30dp" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_Tdisjtomad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </TableRow>
+        <LinearLayout android:orientation="horizontal" android:background="#fff500" android:padding="0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11sp" android:id="@+id/textView2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="*A seção mínima do condutor de cobre para circuitos de tomadas é 2,5mm² e iluminação é 1,5mm². Estes Calculos não leva em consideração a distância e os fatores externos do cabo." android:layout_alignParentBottom="true"/>
+            </TableRow>
+        </LinearLayout>
+    </TableLayout>
+</android.support.design.widget.CoordinatorLayout>

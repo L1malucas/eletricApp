@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableLayout android:background="@android:color/darker_gray" android:layout_width="390dp" android:layout_height="587dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/cabecalho" android:background="#000000" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/texto1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Eletricista Fácil" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/darker_gray" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:textSize="14sp" android:textColor="#fff500" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/textView8" android:layout_width="310dp" android:layout_height="wrap_content" android:text="ELETRICISTA FÁCIL foi criado para facilitar e auxiliar nas instalaçoes elétricas, os calculos fornecidos devem ser verificados por outros metodos antes de sua implementação. Cada fabricante de cabos e disjuntores tem suas particularidades técnicas sobre cada material fabricado.Este aplicativo esta conforme a definição da Norma Brasileira de instalações elétricas de baixa tensão – NBR 5410." android:layout_weight="0.52" app:layout_anchor="@+id/include" app:layout_anchorGravity="80"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/darker_gray" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:textSize="14sp" android:textColor="#fff500" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:layout_width="310dp" android:layout_height="wrap_content" android:text="Duvidas ou Sugestões: windowsxtudo@gmail.com" android:layout_weight="0.52" app:layout_anchor="@+id/include" app:layout_anchorGravity="80"/>
+        </LinearLayout>
+    </TableLayout>
+</android.support.design.widget.CoordinatorLayout>

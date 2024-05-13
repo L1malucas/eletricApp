@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableLayout android:background="@android:color/darker_gray" android:layout_width="368dp" android:layout_height="1000dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/cabecalho" android:background="@android:color/darker_gray" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="#fff500" android:gravity="center" android:id="@+id/texto1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dimensinamento" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+        <TableRow android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginTop="25dp">
+            <ImageButton android:id="@+id/btn_tug" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="0dp" app:srcCompat="@mipmap/tug"/>
+            <ImageButton android:id="@+id/btn_tue" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="0dp" app:srcCompat="@mipmap/tue"/>
+            <ImageButton android:id="@+id/btn_qtensao" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="0dp" app:srcCompat="@mipmap/qtensao"/>
+        </TableRow>
+        <TableRow android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginTop="25dp">
+            <ImageButton android:id="@+id/btn_tresistencia" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="0dp" app:srcCompat="@mipmap/tresistencia"/>
+            <ImageButton android:id="@+id/btn_tpotencia" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="0dp" app:srcCompat="@mipmap/tpotencia"/>
+            <ImageButton android:id="@+id/btn_ap" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="0dp" app:srcCompat="@mipmap/apoio"/>
+        </TableRow>
+        <TableRow android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginTop="25dp">
+            <TextView android:textSize="18sp" android:textColor="#fff500" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="APOIO" android:layout_alignParentBottom="true"/>
+        </TableRow>
+        <LinearLayout>
+            <TableRow android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginTop="1dp">
+                <ImageView android:id="@+id/image1" android:tag="http://profwaldemarojr.wixsite.com/ctep/escolha-seu-curso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/anuncio1" android:onClick="openBrowser"/>
+            </TableRow>
+        </LinearLayout>
+        <LinearLayout>
+            <TableRow android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="25dp">
+                <TextView android:textSize="18sp" android:textColor="#fff500" android:gravity="center" android:id="@+id/btn_sobre" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sobre &apos;ELETRICISTA FÁCIL&apos;" android:layout_alignParentBottom="true"/>
+            </TableRow>
+        </LinearLayout>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

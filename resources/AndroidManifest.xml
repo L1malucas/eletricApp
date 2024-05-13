@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="10" android:versionName="2.0" package="com.informacaotecnologia.eletricistafacil" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25"/>
+    <permission android:name="android.permission.INTERNET"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher_round">
+        <activity android:name="com.informacaotecnologia.eletricistafacil.principal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_materialapoio" android:name="com.informacaotecnologia.eletricistafacil.materialapoio"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_tug" android:name="com.informacaotecnologia.eletricistafacil.tug"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_tue" android:name="com.informacaotecnologia.eletricistafacil.tue"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_contato" android:name="com.informacaotecnologia.eletricistafacil.contato"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_quedatensao" android:name="com.informacaotecnologia.eletricistafacil.quedatensao"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_triangpot" android:name="com.informacaotecnologia.eletricistafacil.triangpot"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_tpotencia" android:name="com.informacaotecnologia.eletricistafacil.tpotencia"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_manutencao" android:name="com.informacaotecnologia.eletricistafacil.manutencao"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_tresistencia" android:name="com.informacaotecnologia.eletricistafacil.tresistencia"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

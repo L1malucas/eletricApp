@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Sarea">
+        <item>Local</item>
+        <item>Copa e Cozinha</item>
+        <item>Cozinha-Bancada</item>
+        <item>Banheiro</item>
+        <item>Área de Serviço e Lavanderia</item>
+        <item>Subsolo, Garagem e Varanda</item>
+        <item>Sala, Quartos e Demais Dependencias</item>
+        <item>Sala Comercial</item>
+        <item>Loja</item>
+    </array>
+    <array name="Stensao">
+        <item>Tensão</item>
+        <item>110V</item>
+        <item>220V</item>
+    </array>
+    <array name="Stensaoq">
+        <item>Tensão</item>
+        <item>110V</item>
+        <item>220V</item>
+    </array>
+    <array name="Stensaotue">
+        <item>Tensão</item>
+        <item>110V</item>
+        <item>220V</item>
+    </array>
+</resources>
