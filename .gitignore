@@ -1,4 +1,11 @@
 # OSX
+.eslintrc.js
+ios/
+android/
+*.config.js
+.eslintrc.js
+node_modules
+package-lock.json
 #
 .DS_Store
 

@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+echo 'VALIDANDO MENSAGEM DO COMMIT...'
+
+# Lê a mensagem do commit a partir do arquivo passado como argumento
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+
+# Define os prefixos permitidos e suas descrições
+ALLOWED_PREFIXES=('chore' 'feat' 'fix' 'refactor' 'docs' 'perf' 'style' 'test' 'build' 'ci' 'env')
+
+# Define o padrão da mensagem do commit
+ALLOWED_PREFIXES_PATTERN=$(IFS=$'|' ; echo "${ALLOWED_PREFIXES[*]}")
+VALID_COMMIT_MSG_PATTERN="^($ALLOWED_PREFIXES_PATTERN): .+$"
+
+if [[ ! $COMMIT_MSG =~ $VALID_COMMIT_MSG_PATTERN ]]; then
+    echo -e "\033[31mERRO\033[0m A mensagem do commit é inválida. \nAs mensagens de commit devem seguir o padrão: \033[1mPREFIXO: Descrição\033[0m. \n\nPrefixos permitidos:\n"
+    echo -e "\t\033[32mchore\033[0m \033[32mfeat\033[0m \033[32mfix\033[0m \033[32mrefactor\033[0m \033[32mdocs\033[0m \033[32mperf\033[0m \033[32mstyle\033[0m \033[32mtest\033[0m \033[32mbuild\033[0m \033[32mci\033[0m \033[32menv\033[0m\n"
+    echo -e "Exemplos: \n\t\033[32mfeat: Adicionar cadastro de usuário\033[0m, \n\t\033[32mfix: Corrigir problema de login\033[0m, \n\t\033[32mrefactor: Melhorar estrutura do código\033[0m.\n"
+    exit 1
+fi
+
+echo -e "\033[32mMensagem do commit é válida.\033[0m"
+exit 0

@@ -1,5 +1,5 @@
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { Colors } from "react-native/Libraries/NewAppScreen"
 
 export const backgroundStyle = {
-  backgroundColor: Colors.darker
-};
+  backgroundColor: Colors.darker,
+}

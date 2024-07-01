@@ -1,7 +1,11 @@
+/* eslint-disable */
+
 module.exports = {
-  arrowParens: 'avoid',
+  arrowParens: "avoid",
   bracketSameLine: true,
-  bracketSpacing: false,
-  singleQuote: true,
-  trailingComma: 'all',
-};
+  singleQuote: false,
+  trailingComma: "all",
+  bracketSpacing: true,
+  singleQuote: false,
+  semi: false,
+}
